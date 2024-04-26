@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rps.css">
+    <title>RPS_Game</title>
+</head>
+<body>
+    <!-- <center> -->
+    <div>
+        <img src="Pictures/game.jpg" alt="" class="game">
+        <p class="title">Rock, Paper, Scissors!!!</p>
+    </div>
+    
+    <div class="play-section">
+        <button onclick="
+        playRPS('Rock');"
+        class="moves-b">
+
+        <img src="Pictures/rock1.jpg" alt="" class="moves">
+        </button>
+
+        <button onclick="
+            playRPS('Paper');"
+            class="moves-b">
+
+            <img src="Pictures/paper1.png" alt="" class="moves">
+        </button>
+
+        <button onclick="
+            playRPS('Scissors');"
+            class="moves-b">
+
+            <img src="Pictures/scissors1.png" alt="" class="moves">
+        </button>
+    </div>
+
+    <div>
+        <p class="js-result result"></p>
+        <p class="js-moves moving"></p>
+        <p class="js-score score"></p>
+    </div>
+
+    <button onclick="
+        score.wins = 0;
+        score.loss = 0;
+        score.ties = 0;
+        score.Total_games = 0;
+        localStorage.removeItem('score');
+        updateScore();"
+        class="reset">
+
+        Reset Score
+    </button>
+
+    <script src="rps.js"></script>
+<!-- </center> -->
+</body>
+</html>
