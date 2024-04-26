@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: #FFE1C6;
+    font-family: Gamja Flower;
+    text-align: center;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.moves{
+    height: 150px;
+    background: transparent;
+}
+
+.moves-dis{
+    height: 10px;
+}
+
+.moves-b{
+    background-color: transparent;
+    border: 0px solid white;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.result{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.moving{
+    font-size: 40px;
+}
+
+.score{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.reset{
+    background-color: #3f8efc;
+    color: #fbfef9;
+    border: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.game{
+    height: 300px;
+}
